@@ -59,7 +59,7 @@ export function PiniaSharedState({
         return
 
       externalUpdate = true
-      timestamp = Date.now()
+      timestamp = newState.timestamp
 
       store.$patch((state) => {
         keysToUpdate.forEach((key) => {
